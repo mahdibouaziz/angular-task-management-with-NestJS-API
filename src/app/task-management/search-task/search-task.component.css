@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: #ececec;
+  border-radius: 5px;
+}
+.hint {
+  color: #ececec;
+}

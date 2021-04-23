@@ -1,1 +1,16 @@
-<p>search-task works!</p>
+<div class="container">
+  <mat-form-field class="search-input" appearance="outline">
+    <mat-label> <mat-icon>search</mat-icon> Search</mat-label>
+    <input matInput placeholder="Search" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Select me</mat-label>
+    <mat-select>
+      <mat-option value="OPEN">Open</mat-option>
+      <mat-option value="DONE">Done</mat-option>
+      <mat-option value="IN_PROGRESS">In Progress</mat-option>
+    </mat-select>
+    <mat-hint class="hint" align="end">Here's the dropdown arrow ^</mat-hint>
+  </mat-form-field>
+</div>

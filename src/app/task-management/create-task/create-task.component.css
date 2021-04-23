@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #ececec;
+}
+
+.raised-button {
+  padding: 0.1rem 0.4rem;
+  padding-right: 0.8rem;
+  border-radius: 20px;
+  background-color: #ececec;
+}
+
+.icon-button {
+  font-size: 1.3rem;
+}
+
+.logout-button {
+  color: #ececec;
+  margin-left: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.logout-button:hover {
+  color: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
