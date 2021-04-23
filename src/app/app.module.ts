@@ -13,15 +13,26 @@ import { CreateTaskComponent } from './task-management/create-task/create-task.c
 import { SearchTaskComponent } from './task-management/search-task/search-task.component';
 import { TaskComponent } from './task-management/task/task.component';
 import { TasksContainerComponent } from './task-management/tasks-container/tasks-container.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, SigninComponent, TaskManagementComponent, CreateTaskComponent, SearchTaskComponent, TaskComponent, TasksContainerComponent],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    SigninComponent,
+    TaskManagementComponent,
+    CreateTaskComponent,
+    SearchTaskComponent,
+    TaskComponent,
+    TasksContainerComponent,
+  ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

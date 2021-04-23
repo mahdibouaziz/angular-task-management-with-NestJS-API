@@ -6,33 +6,47 @@
       >Fill in your username and password to sign in.</mat-card-content
     >
 
+    <div *ngIf="invalidCredentials">
+      <mat-card class="invalid-credentials">
+        <mat-card-content> Invalid username or password </mat-card-content>
+      </mat-card>
+    </div>
+
     <mat-card-content class="login-form-container">
-      <form class="login-form">
-        <mat-form-field class="login-input">
-          <mat-label>Username</mat-label>
-          <input matInput placeholder="Enter your username" />
-        </mat-form-field>
+      <mat-form-field class="login-input">
+        <mat-label>Username</mat-label>
+        <input
+          matInput
+          [(ngModel)]="username"
+          placeholder="Enter your username"
+        />
+      </mat-form-field>
 
-        <mat-form-field class="login-input">
-          <mat-label>Password</mat-label>
-          <input matInput placeholder="Enter your username" />
-        </mat-form-field>
+      <mat-form-field class="login-input">
+        <mat-label>Password</mat-label>
+        <input
+          type="password"
+          matInput
+          [(ngModel)]="password"
+          placeholder="Enter your password"
+        />
+      </mat-form-field>
 
-        <mat-divider [inset]="true"></mat-divider>
+      <mat-divider [inset]="true"></mat-divider>
 
-        <div class="login-buttons">
-          <a class="login-button-signin" mat-raised-button color="primary">
-            SIGN IN
-          </a>
-          <a
-            routerLink="/signin"
-            class="login-button-signup"
-            mat-stroked-button
-          >
-            DON'T HAVE AN ACCOUNT? SIGN UP NOW!
-          </a>
-        </div>
-      </form>
+      <div class="login-buttons">
+        <button
+          (click)="verifCredentials()"
+          class="login-button-signin"
+          mat-raised-button
+          color="primary"
+        >
+          SIGN IN
+        </button>
+        <a routerLink="/signin" class="login-button-signup" mat-stroked-button>
+          DON'T HAVE AN ACCOUNT? SIGN UP NOW!
+        </a>
+      </div>
     </mat-card-content>
   </mat-card>
 </div>

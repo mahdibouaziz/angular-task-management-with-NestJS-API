@@ -30,3 +30,6 @@
 .login-button-signup {
   width: 100%;
 }
+.invalid-credentials {
+  background-color: rgb(216, 131, 131);
+}
