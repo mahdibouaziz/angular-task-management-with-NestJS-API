@@ -21,16 +21,16 @@
         <mat-divider [inset]="true"></mat-divider>
 
         <div class="signin-buttons">
-          <button
-            class="signin-button-signup"
-            mat-raised-button
-            color="primary"
-          >
+          <a class="signin-button-signup" mat-raised-button color="primary">
             SIGN UP
-          </button>
-          <button class="signin-button-signin" mat-stroked-button>
+          </a>
+          <a
+            routerLink="/login"
+            class="signin-button-signin"
+            mat-stroked-button
+          >
             ALREADY HAVE AN ACCOUNT? SIGN IN!
-          </button>
+          </a>
         </div>
       </form>
     </mat-card-content>
