@@ -1,0 +1,38 @@
+<div class="signin-container">
+  <mat-card class="signin-card">
+    <mat-card-title class="signin-title">Join us!</mat-card-title>
+
+    <mat-card-content class="signin-text"
+      >Start managing tasks easily.</mat-card-content
+    >
+
+    <mat-card-content class="signin-form-container">
+      <form class="signin-form">
+        <mat-form-field class="signin-input">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="Enter your username" />
+        </mat-form-field>
+
+        <mat-form-field class="signin-input">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Enter your username" />
+        </mat-form-field>
+
+        <mat-divider [inset]="true"></mat-divider>
+
+        <div class="signin-buttons">
+          <button
+            class="signin-button-signup"
+            mat-raised-button
+            color="primary"
+          >
+            SIGN UP
+          </button>
+          <button class="signin-button-signin" mat-stroked-button>
+            ALREADY HAVE AN ACCOUNT? SIGN IN!
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

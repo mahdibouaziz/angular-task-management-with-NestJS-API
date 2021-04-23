@@ -1,0 +1,33 @@
+.login-container {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh;
+  background-color: #565f70;
+}
+
+.login-card {
+  background-color: #e7eeff;
+}
+
+.login-text {
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.login-input {
+  width: 100%;
+}
+
+.login-buttons {
+  margin-top: 0.5rem;
+}
+
+.login-button-signin {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.login-button-signup {
+  width: 100%;
+}
