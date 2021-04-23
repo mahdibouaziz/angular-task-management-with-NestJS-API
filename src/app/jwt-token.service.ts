@@ -23,6 +23,12 @@ export class JwtTokenService {
     }
   }
 
+  // remove the token
+  removeToken(): void {
+    this.jwtToken = null;
+    this.decodedToken = null;
+  }
+
   // decode the token
   decodeToken(): void {
     if (this.jwtToken) {

@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'; // CLI imports router
 import { AuthorizeGuard } from './authorize.guard';
+import { LoginSignupGuard } from './login-signup.guard';
 import { LoginComponent } from './login/login.component';
 import { SigninComponent } from './signin/signin.component';
 import { TaskManagementComponent } from './task-management/task-management/task-management.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'signup', component: SigninComponent },
+  { path: 'login', component: LoginComponent, canActivate: [LoginSignupGuard] },
+  {
+    path: 'signup',
+    component: SigninComponent,
+    canActivate: [LoginSignupGuard],
+  },
   {
     path: 'task-management',
     component: TaskManagementComponent,
